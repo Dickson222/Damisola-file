@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>Happy Birthday Ajewole Damisola Moyosola 🎉</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== PAGE 1: WELCOME SCREEN ===== -->
+<div id="page-welcome" class="page active">
+  <canvas id="confetti-canvas"></canvas>
+  <div class="particles" id="welcome-particles"></div>
+  <div class="welcome-content">
+    <div class="crown-emoji">👑</div>
+    <h1 class="welcome-title" id="welcome-title"></h1>
+    <p class="welcome-sub" id="welcome-sub"></p>
+    <div class="heart-pulse">❤️</div>
+  </div>
+  <div class="floating-hearts" id="floating-hearts-welcome"></div>
+</div>
+
+<!-- ===== PAGE 2: LOCK SCREEN ===== -->
+<div id="page-lock" class="page">
+  <div class="lock-bg" id="lock-bg"></div>
+  <div class="lock-overlay"></div>
+  <div class="lock-particles" id="lock-particles"></div>
+  <div class="lock-top">
+    <div class="lock-time" id="lock-time">00:00</div>
+    <div class="lock-date" id="lock-date">Today</div>
+  </div>
+  <div class="lock-card glass">
+    <div class="lock-icon">🔒</div>
+    <p class="lock-prompt">Input your surname to unlock your memories ❤️</p>
+    <input type="text" id="lock-input" class="lock-input" placeholder="Type here…" autocomplete="off"/>
+    <button class="lock-btn" onclick="checkPassword()">Unlock ✨</button>
+    <p class="lock-error" id="lock-error"></p>
+  </div>
+  <div class="floating-hearts" id="floating-hearts-lock"></div>
+</div>
+
+<!-- ===== PAGE 3: MEMORY GALLERY ===== -->
+<div id="page-gallery" class="page">
+  <audio id="bg-music" loop></audio>
+  <div class="gallery-slides" id="gallery-slides">
+    <div class="slide active" id="slide-0"></div>
+    <div class="slide" id="slide-1"></div>
+    <div class="slide" id="slide-2"></div>
+    <div class="slide" id="slide-3"></div>
+    <div class="slide" id="slide-4"></div>
+    <div class="slide" id="slide-5"></div>
+    <div class="slide" id="slide-6"></div>
+    <div class="slide" id="slide-7"></div>
+    <div class="slide" id="slide-8"></div>
+    <div class="slide" id="slide-9"></div>
+    <div class="slide" id="slide-10"></div>
+    <div class="slide" id="slide-11"></div>
+    <div class="slide" id="slide-12"></div>
+    <div class="slide" id="slide-13"></div>
+    <div class="slide" id="slide-14"></div>
+  </div>
+  <div class="gallery-overlay"></div>
+  <div class="gallery-particles" id="gallery-particles"></div>
+  <div class="gallery-caption" id="gallery-caption">
+    <span id="caption-text"></span>
+  </div>
+  <div class="gallery-progress">
+    <div class="progress-dots" id="progress-dots"></div>
+  </div>
+  <div class="gallery-next-hint">Swipe or tap to continue ✨</div>
+  <div class="floating-hearts" id="floating-hearts-gallery"></div>
+</div>
+
+<!-- ===== PAGE 4: FINAL SURPRISE ===== -->
+<div id="page-final" class="page">
+  <div class="final-bg"></div>
+  <div class="final-particles" id="final-particles"></div>
+  <div class="final-content">
+    <div class="question-card glass" id="question-card">
+      <div class="question-emoji">👀</div>
+      <h2 class="question-title">Do you want to know who created this special surprise for you?</h2>
+      <div class="question-heart">❤️</div>
+      <div class="question-btns">
+        <button class="btn-yes" onclick="revealCreator()">YES 💖</button>
+        <button class="btn-no" onclick="noBtn()">NO 🙈</button>
+      </div>
+    </div>
+    <div class="reveal-card glass" id="reveal-card">
+      <div class="reveal-sparkles" id="reveal-sparkles"></div>
+      <div class="reveal-inner">
+        <div class="reveal-heart-big">💖</div>
+        <p class="reveal-label">Created with love by</p>
+        <h2 class="reveal-name">Godwin Dickson 💻✨</h2>
+        <div class="reveal-divider">✨ ——— ✨</div>
+        <div class="reveal-final-msg">Happy Birthday Ajewole Damisola Moyosola 🎂🌹</div>
+      </div>
+    </div>
+  </div>
+  <div class="floating-hearts" id="floating-hearts-final"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
